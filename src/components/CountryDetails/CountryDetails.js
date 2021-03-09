@@ -17,7 +17,7 @@ const CountryDetails = () => {
 
     return (
         <div className="country">
-            <h1>Country Details</h1>
+            <h1>Country Details by country name</h1>
             <img src={country.flag} alt=""/>
             <h1>{country.name}</h1>
             <p>Calling Code: {country.callingCodes}</p>
