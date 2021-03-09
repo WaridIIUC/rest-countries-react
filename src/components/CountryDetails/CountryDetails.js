@@ -11,7 +11,7 @@ const CountryDetails = () => {
         .then(res => res.json())
         .then(data => {
             setCountry(data[0]);
-            console.log(data[0].currencies[0].name);
+            //console.log(data[0].currencies[0].name);
         })
     }, [])
 
@@ -20,13 +20,13 @@ const CountryDetails = () => {
             <h1>Country Details</h1>
             <img src={country.flag} alt=""/>
             <h1>{country.name}</h1>
-            <p>{country.callingCodes}</p>
-            <p>{country.capital}</p>
-            <p>{country.region}</p>
-            <p>{country.population}</p>
-            {/* <p>{country.currencies[0].name}</p> */}
-            {/* <p>{country && country?.altSpellings[1]}</p> */}
-            
+            <p>Calling Code: {country.callingCodes}</p>
+            <p>Country Capital: {country.capital}</p>
+            <p>Country Region: {country.region}</p>
+            <p>Country Population: {country.population}</p>
+            <p>Currencies: {country.currencies && country.currencies[0].name}</p>
+            <p>Constitutional name: {country.altSpellings && country.altSpellings[1]}</p>
+            <p>Languages: {country.languages && country.languages[0].name}</p>
 
         </div>
     );
