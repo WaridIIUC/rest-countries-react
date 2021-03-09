@@ -1,0 +1,12 @@
+.country{
+    border: 2px solid lightgreen;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    width: 250px;
+    margin: 10px auto;
+}
+img{
+    width: 200px;
+    height: 150px;
+}
